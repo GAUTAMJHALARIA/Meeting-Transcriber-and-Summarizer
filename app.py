@@ -7,8 +7,6 @@ from pydub import AudioSegment
 import imageio_ffmpeg
 
 ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
-ffprobe_path = imageio_ffmpeg.get_ffprobe_exe()
-
 
 # Environment fixes
 os.environ["PATH"] += os.pathsep + os.path.dirname(ffmpeg_path)
