@@ -4,12 +4,14 @@ import streamlit as st
 import os
 import json
 from pydub import AudioSegment
-import ffmpeg_static
+import imageio_ffmpeg
 
+ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
+ffprobe_path = imageio_ffmpeg.get_ffprobe_exe()
 
 
 # Environment fixes
-os.environ["PATH"] += os.pathsep + os.path.dirname(ffmpeg_static.__file__)
+os.environ["PATH"] += os.pathsep + os.path.dirname(ffmpeg_path)
 os.environ["SPEECHBRAIN_CACHE"] = "./.cache"
 os.environ["HF_HUB_DISABLE_SYMLINKS"] = "1"
 os.environ["TRANSFORMERS_CACHE"] = "./.cache/huggingface"
