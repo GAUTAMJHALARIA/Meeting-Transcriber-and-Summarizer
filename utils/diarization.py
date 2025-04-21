@@ -1,5 +1,4 @@
 from pyannote.audio import Pipeline
-import torch
 import datetime
 
 pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization", use_auth_token="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")
