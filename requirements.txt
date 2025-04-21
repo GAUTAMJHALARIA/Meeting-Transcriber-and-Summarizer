@@ -1,5 +1,5 @@
 ffmpeg-python
-ffmpeg-static
+imageio-ffmpeg
 absl-py==2.2.2
 aiohappyeyeballs==2.6.1
 aiohttp==3.11.16
